@@ -1,0 +1,1 @@
+{"date":"2020-5-13","content":"今天完成了毕业论文，这几天一直搞移动端色谱图，猜到了 React Native 的一些坑。对于 webview 中的 postMessage 通信的坑如下：\n\n\t postMeaasge 在 ios 和 Android 不一样，iOS上可以使用 postMessage 传数据，在android 上不行。\n\t\n\n         解决：在 ios上需要使用 window.addEventListener('message') 注册监听 message 事件，Android上是使用  document.addEventListener('message') ，不能使用 window.onmessage()，否则就会出现上面的问题。\n","rate":5}
